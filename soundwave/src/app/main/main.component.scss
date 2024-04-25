@@ -1,0 +1,112 @@
+@import "../../styles.scss";
+
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 86vh;
+    gap: 10%;
+    background-color: #302E3A;
+}
+.landing-page-img img{
+    width: 21vw;
+}
+.landing-page-img{
+    align-self: end;
+    z-index: 2;
+}
+.landing-page-content{
+    width: 27vw;
+    height: 27vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 9%;
+    z-index: 1;
+    
+}
+.landing-page-content h1,h2{
+    font-family: 'Poppins-Medium';
+    color: white;
+}
+.landing-page-content h1{
+    font-size: 40px;
+}
+.landing-page-content h2{
+    line-height: 26px;
+}
+#join-button{
+    width: 6vw;
+    height: 6vh;
+    font-size: 11px;
+    font-family: 'Poppins-Regular';
+    background-color: #1762a7;
+    color: white;
+    border-radius: 7px;
+}
+#join-button:hover{
+    background-color: #2180d8;
+}
+
+#dot1 {
+    position: absolute;
+    z-index: 0;
+    height: 20rem;
+    width: 20rem;
+    background-color: #3457b21a;
+    border-radius: 50%;
+    top: 17vh;
+    left: 30vw;
+}
+#dot2 {
+    position: absolute;
+    z-index: 0;
+    height: 20rem;
+    width: 20rem;
+    background-color: #bc3a801a;
+    border-radius: 50%;
+    left: 4vw;
+    bottom: 9vh;
+}
+#dot3 {
+    position: absolute;
+    z-index: 0;
+    height: 33rem;
+    width: 33rem;
+    background-color: rgba(52, 87, 178, 0.1019607843);
+    border-radius: 50%;
+    bottom: -11rem;
+    right: -11rem;
+}
+
+@media screen and (max-width:768px){
+    .landing-page-img{
+        display: none;
+    }
+    .landing-page-content{
+        width: 78vw;
+        height: 37vh;
+    }
+    .landing-page-content h1{
+        line-height: 3rem;
+    }
+    #join-button{
+        width: 21vw;
+    }
+    #dot1{
+        width: 5rem;
+        height: 5rem;
+    }
+    #dot2{
+        width: 5rem;
+        height: 5rem;
+        bottom: 2vh;
+    }
+    #dot3{
+        width: 8rem;
+        height: 8rem;
+        bottom: -3rem;
+        right: -3rem;
+    }
+}

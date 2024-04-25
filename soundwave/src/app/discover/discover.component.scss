@@ -1,0 +1,77 @@
+@import "../../styles.scss";
+
+section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 78vh;
+    gap: 1%;
+    background-color: #302E3A;
+}
+.discover-img img{
+    width: 18vw;
+}
+
+.discover-content{
+    width: 40vw;
+    height: 27vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16%;
+    
+}
+.discover-content h3{
+    font-family: 'Poppins-Medium';
+    color: white;
+}
+.discover-content h4, .discover-icons-content p{
+    font-family: 'Poppins-Regular';
+    font-size: 15px;
+    color: white;
+}
+.discover-content h3{
+    font-size: 40px;
+}
+.discover-content h4{
+    line-height: 26px;
+}
+.discover-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 4%;
+}
+
+.discover-icons-content{
+    background-color: #211F27;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    gap: 9%;
+}
+
+.discover-icons-content img{
+    width: 2rem;
+}
+.discover-icons-content p{
+    color: white;
+}
+
+@media screen and (max-width:768px){
+    section{
+        flex-direction: column;
+    }
+    .discover-content{
+        width: 78vw;
+        height: 33vh;
+        gap:2%;
+        justify-content: space-around;
+    }
+    .discover-img img{
+        width: 60vw;
+    }
+}
