@@ -1,0 +1,129 @@
+@import "../../styles.scss";
+
+section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 78vh;
+    gap: 1%;
+    background-color: #302E3A;
+}
+
+.join-content{
+    width: 32vw;
+    height: 27vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16%;
+    
+}
+.join-content h5,strong{
+    font-family: 'Poppins-Bold';   
+    font-size: 47px;
+}
+.join-content h5{
+    color: white;
+}
+.join-content strong{
+    color: #ff27d0;
+}
+.form-content{
+    z-index: 3;
+}
+form{
+    height: 38vh;
+    width: 22vw;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    justify-content: space-between;
+    gap: 8%;
+    padding-right: 14%;
+    padding-left: 14%;
+    padding-bottom: 8%;
+    padding-top: 8%;
+    border-radius: 15px;
+    background-color: #211F27;
+}
+.form-inputs{
+    display: flex;
+    flex-direction: column;
+}
+.form-inputs label{
+    font-family: 'Poppins-Bold';
+    color: white;
+    font-size: 12px;
+    margin-bottom: 2%;
+}
+.input{
+    height: 4vh;
+    border-radius: 5px;
+    background-color: #211F27;
+    border: solid 0.5px;
+    border-color: rgb(52 87 178 / 27%);
+}
+#form-button{
+    background-color: #1762a7;
+    height: 5vh;
+    border-radius: 5px;
+    font-family: 'Poppins-regular';
+    font-size: 11px;
+    color: white;
+}
+#form-button:hover{
+    background-color: #2180d8;
+}
+.join-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 78vh;
+    width: 60vw;
+}
+
+#dot1 {
+    position: absolute;
+    z-index: 0;
+    height: 27rem;
+    width: 27rem;
+    background-color: rgba(52, 87, 178, 0.1019607843);
+    border-radius: 100%;
+    top: -167px;
+    left: 19vw;
+}
+#dot2 {
+    position: absolute;
+    z-index: 0;
+    height: 27rem;
+    width: 27rem;
+    background-color: #bc3a801a;
+    border-radius: 50%;
+    left: -4rem;
+    bottom: 0;
+}
+@media screen and (max-width:768px){
+    .join-section{
+        flex-direction: column;
+    }
+    .join-content{
+        width: 78vw;
+    }
+    form{
+        width: 53vw;
+    }
+    .form-content{
+        width: 73vw;
+    }
+    #dot1{
+    height: 7rem;
+    width: 7rem;
+    top: -38px;
+    }
+    #dot2{
+    height: 7rem;
+    width: 7rem;
+    left: -1rem;
+    }
+}
